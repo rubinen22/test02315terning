@@ -1,12 +1,12 @@
 package terning;
 
+import java.util.Random;
+
 public class Dice {
 	// roll the die and return the value (1-8)
 	public int roll() {
-		float d1=(float)Math.random();     // 0-1
-		float d2=d1*7;                     // 0-7
-		int d3=Math.round(d2);             // 0-7 integer
-		return d3 + 1;                     // 1-8		
+		Random rng = new Random();
+		return rng.nextInt(6) + 1; // 1-6
 	}
 	
 	// roll the die n times and print the values
