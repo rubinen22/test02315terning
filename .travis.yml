@@ -1,2 +1,2 @@
 language: java
-script: phpunit Test.php
+script: junit DiceTest.java
